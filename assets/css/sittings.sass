@@ -1,0 +1,39 @@
+$font : 'Roboto'
+$main : #1419F3
+$active : #832B5B
+
+*
+  box-sizing: border-box
+
+body
+  margin: 0
+  padding: 0
+  background: #EDEFEB
+  font-family: $font, sans-serif
+
+.container
+  width: 1170px
+  padding: 0 15px
+  margin: 0 auto
+  @media (min-width: 992px) and (max-width: 1200px)
+    width: 960px
+  @media (min-width: 768px) and (max-width: 992px)
+    width: 720px
+  @media (min-width: 576px) and (max-width: 768px)
+    width: 540px
+  @media (max-width: 576px)
+    width: 100%
+
+.heading
+  border-bottom: 1px dotted $active
+  h1
+    margin: 0
+    font-weight: 400
+    font-size: 30px
+    letter-spacing: 1px
+    line-height: 36px
+
+.section-content
+  border: 1px solid #D8DAD6
+  background: #ffffff
+  padding: 30px 15px 15px

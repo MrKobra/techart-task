@@ -1,0 +1,97 @@
+@import "reset"
+@import "../fonts/fonts.css"
+@import "sittings"
+
+.news
+  padding: 50px 0
+  &-container
+    display: flex
+    flex-direction: column
+    row-gap: 20px
+    margin-top: 25px
+  &-card
+    &_header
+      display: flex
+      column-gap: 5px
+      @media (max-width: 992px)
+        flex-direction: column
+        row-gap: 5px
+      .date
+        span
+          font-size: 16px
+          color: #ffffff
+          background: $active
+          padding: 3px 5px
+          display: inline-block
+    &_title
+      flex-grow: 1
+      a
+        font-size: 16px
+        margin: 0
+        color: $main
+        text-decoration: underline
+        line-height: 22px
+        &:hover
+          text-decoration: none
+    &_announce
+      margin-top: 3px
+      p
+        margin: 0
+        font-size: 14px
+        line-height: 18px
+
+.pagination
+  border-top: 1px dashed $active
+  margin-top: 25px
+  padding-top: 20px
+  p
+    margin: 0
+    font-size: 16px
+  ul
+    margin: 10px 0 0
+    padding: 0
+    display: flex
+    flex-wrap: wrap
+    column-gap: 5px
+    row-gap: 5px
+    li
+      list-style: none
+      flex-shrink: 1
+      flex-basis: 40px
+      border: 1px solid #CDCFCC
+      &.active
+        a
+          background: $active
+          color: #ffffff
+      a
+        display: block
+        width: 100%
+        text-align: center
+        font-size: 16px
+        line-height: 20px
+        background: #EDEFEB
+        &:hover
+          background: $active
+          color: #ffffff
+
+.news-view
+  padding: 50px 0
+  &_content
+    p
+      margin: 20px 0
+      font-size: 16px
+      line-height: 18px
+  &_back
+    border-top: 1px dashed $active
+    padding: 10px 0 15px
+    text-decoration: underline
+    a
+      color: $active
+      font-size: 18px
+
+.home
+  width: 100%
+  height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
